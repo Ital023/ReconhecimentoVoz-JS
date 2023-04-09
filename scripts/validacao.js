@@ -16,6 +16,7 @@ function verificaNumeroValido(chute){
             <main class="principal">
             <h2 class="titulo">Você acertou!</h2>
             <h3 class="sub-titulo">O número secreto era ${numeroGerado}</h3>
+            <button id="jogar-novamente" class="btn-novamente">Jogar Novamente</button>
             </main>
         `
         return 
@@ -27,6 +28,12 @@ function verificaNumeroValido(chute){
 
 
 }
+
+document.body.addEventListener("click",(e)=>{
+    if(e.target.id == "jogar-novamente"){
+        window.location.reload();
+    }
+})
 
 function verificaNumero(numero){
     return Number.isNaN(numero);
