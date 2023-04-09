@@ -43,3 +43,15 @@
     border-radius: 5px;
     margin-top: 20px;
 }
+.game-over{
+    background-color: black;
+    color: crimson;
+    font-family: var(--font-family);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
