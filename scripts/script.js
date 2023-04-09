@@ -2,6 +2,7 @@ const menorNumero = 0;
 const maiorNumero = 100;
 
 const numeroGerado = gerarNumero();
+console.log(numeroGerado);
 
 function gerarNumero(){
     return parseInt(Math.random() * (maiorNumero + 1));
